@@ -7,7 +7,7 @@
     <title>Works</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/hp.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -31,21 +31,7 @@
             <div class="loader_line"></div>
         </div>
         <!-- /PRELOADER -->
-<!-- Chat-Bot-Start -->
 
-<a href="https://mediafiles.botpress.cloud/0999a311-10ab-4034-be31-3361db344cfd/webchat/bot.html" target="_blank">       
-    <div class="chat-bot">
-                 <div class="chat-icon">
-                  <img src="assets/img/b1.png" alt="Chat Icon">
-                </div>
-                <div class="chat-window">
-                   </a>
-                  <!-- Chat window content goes here -->
-                  <!-- <iframe src="https://mediafiles.botpress.cloud/0999a311-10ab-4034-be31-3361db344cfd/webchat/bot.html" width="300" height="400" frameborder="0"></iframe> -->
-                </div>
-              </div>
-    </a>
-              <!-- Chat-Bot-End -->
         <!-- header-start -->
         <div class="bostami-header-area mb-30 z-index-5">
             <div class="container">
@@ -54,7 +40,7 @@
                         <!-- logo -->
                         <div class="col-lg-2 col-md-6 col-sm-4 col-4 d-flex align-items-center">
                             <div class="bostami-header-logo hvr-float-shadow">
-                                <a class="site-logo" href="index.html">
+                                <a class="site-logo" href="index.php">
                                     <img src="assets/img/logo/hp.png" alt="">
                                 </a>
                             </div>
@@ -67,7 +53,7 @@
                                     <nav class="bastami-main-menu main_menu_2">
                                         <ul>
                                             <li class="active hvr-float">
-                                                <a href="index.html">
+                                                <a href="index.php">
                                                     <span>
                                                         <i class="fa-light fa-house"></i>
                                                     </span>
@@ -75,7 +61,7 @@
                                                 </a>
                                             </li>
                                             <li class="hvr-float">
-                                                <a href="about.html">
+                                                <a href="about.php">
                                                     <span>
                                                         <i class="fa-light fa-address-card"></i>
                                                     </span>
@@ -83,7 +69,7 @@
                                                 </a>
                                             </li>
                                             <li class="hvr-float">
-                                                <a href="resume.html">
+                                                <a href="resume.php">
                                                     <span>
                                                         <i class="fa-light fa-file-user"></i>
                                                     </span>
@@ -91,7 +77,7 @@
                                                 </a>
                                             </li>
                                             <li class="hvr-float">
-                                                <a href="portfolio.html">
+                                                <a href="portfolio.php">
                                                     <span>
                                                         <i class="fa-light fa-briefcase"></i>
                                                     </span>
@@ -100,7 +86,7 @@
                                             </li>
                                             
                                             <li class="hvr-float">
-                                                <a href="contact.html">
+                                                <a href="contact.php">
                                                     <span>
                                                         <i class="fa-light fa-address-book"></i>
                                                     </span>
@@ -163,7 +149,7 @@
                                     <li class="fillter-btn is-checked " data-filter="*">All</li>
                                     <li class="fillter-btn" data-filter=".portfolio">Personal-Portfolio</li>
                                     <li class="fillter-btn" data-filter=".project">Projects</li>
-                                    <!-- <li class="fillter-btn" data-filter=".logo"> logo</li> -->
+                                    <li class="fillter-btn" data-filter=".card">Profile Cards</li>
                                 </ul>
                             </div>
 
@@ -187,7 +173,7 @@
                                     <!-- signle item -->
                                     <div class=" isotop-item design project">
                                         <div class="fillter-item bg-catkrill">
-                                            <a class="img" href="" data-bs-toggle="modal" data-bs-target="#portfolio-2">
+                                            <a class="img" href="" data-bs-toggle="modal" data-bs-target="#portfolio-3">
                                                 <img src="assets/img/work/2.png" alt="">
                                             </a>
                                             <span class="item-subtitle">First Live Project</span>
@@ -198,18 +184,17 @@
                                     </div>
 
                                     <!-- signle item -->
-                                    <!-- <div class=" isotop-item logo mockup">
-                                        <div class="fillter-item bg-catkrill ">
-                                            <a class="img" href="" data-bs-toggle="modal" data-bs-target="#portfolio-1">
-                                                <img src="assets/img/work/work-img-3.png" alt="">
+                                    <div class=" isotop-item design card">
+                                        <div class="fillter-item bg-prink">
+                                            <a class="img" href="" data-bs-toggle="modal" data-bs-target="#pcard">
+                                                <img src="assets/img/work/pc.png" alt="">
                                             </a>
-                                            <span class="item-subtitle">Travel Landing , UX/UI </span>
+                                            <span class="item-subtitle">Profile Card</span>
                                             <h6 class="item-title">
-                                                <a href="" data-bs-toggle="modal" data-bs-target="#portfolio-1">T-Shirt
-                                                    Design</a>
+                                                <a href="" data-bs-toggle="modal" data-bs-target="#pcard">Profile Card</a>
                                             </h6>
                                         </div>
-                                    </div> -->
+                                    </div>
 
                                     <!-- signle item -->
                                     <!-- <div class=" isotop-item mockup">
@@ -262,14 +247,14 @@
 
                     <!-- footer -->
                     <?php
-include 'footer.html';
+include 'footer.php';
                     ?>
 
                 </div>
             </div>
         </div>
 
-        <!-- portfolio-1st-modal-start -->
+        <!-- Portfolio-1st-modal-start -->
 
         <div class="modal portfolio-modal-box fade" id="portfolio-1" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -338,11 +323,11 @@ Overall, my personal portfolio encapsulates not only my technical prowess but al
             </div>
         </div>
 
-        <!-- portfolio-modal-end -->
+        <!-- Portfolio-first-modal-end -->
 
 
 
-          <!-- portfolio-2nd-modal-start -->
+          <!-- Project-second-modal-start -->
 
           <div class="modal portfolio-modal-box fade" id="portfolio-2" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -415,12 +400,96 @@ The project represents a <b> significant milestone</b> in my journey as a <b>web
             </div>
         </div>
 
-        <!-- portfolio-modal-end -->
- <!-- footer -->
- <div class="footer-copyright text-center pt-25 pb-25">
-    <span>© 2024 All Rights Reserved by <b> 
-<a class="hvr-float-shadow" href="https://lucifer01430.github.io/PersonalPortfolio/" target="_blank" rel="noopener noreferrer" >Harsh Pandey</a></b>.</span>
-</div>
+        <!-- project-second-modal-end -->
+
+
+
+
+
+          <!-- Profile_Card-third-modal-start -->
+
+          <div class="modal portfolio-modal-box fade" id="pcard" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-bs-dismiss="modal">
+                            <i class="far fa-times"></i>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+<center>                        <h6 class="blog-title hvr-float-shadow">
+                           Personal Profile Card
+                         
+                        </h6></center>
+
+                        <div class="portfolio-modal-table">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                        Project : <span class="hvr-pop">Personal Digital Card</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-regular fa-user "></i>
+                                        Client : <span class="hvr-pop">Myself</span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-code"></i>
+                                        Langages : <span class="hvr-pop">HTML, CSS, JavaScript,
+                                        </span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <h3 class="portfolio-modal-table-text">
+                                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                        Preview : <a href="https://lucifer01430.github.io/pcard/" target="_blank" rel="noopener noreferrer" class="hvr-pop">Personal Digital Card</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="h1-modal-paragraph">
+                           <p>
+                           I have created my <a class="hvr-float-shadow" href="https://lucifer01430.github.io/pcard/"><b>Own Digital Card</b></a>  using HTML, CSS, and JavaScript. As a fresher, this project showcases my skills and enthusiasm for web development. The card includes information about me, details of my work, and my contact information, serving as an effective way to present my profile and demonstrate my web development skills. 
+
+</p><p>
+
+This project represents a significant effort on my part, and I take pride in having created it myself. It marks the beginning of my professional journey, and I am eager to further enhance and refine my skills as I progress in my career. Creating this digital card has been a valuable learning experience, allowing me to apply theoretical knowledge to a practical project and gain hands-on experience in web development.
+
+
+
+
+
+
+                           </p>
+
+                        </div>
+                        <div class="h1-modal-img">
+                       <a href="https://lucifer01430.github.io/pcard/" target="_blank" rel="noopener noreferrer">   <img class="hvr-pop" src="assets/img/work/pc.png" alt=""></a>  
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- project-second-modal-end -->
+
+
+
+
+
+
+
+
+
+
     </div>
 
     <!-- JS here -->

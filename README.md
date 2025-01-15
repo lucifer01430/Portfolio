@@ -40,10 +40,10 @@ Portfolio/
 ├── portfolio.html   # Portfolio showcase page
 └── resume.html      # Resume page
 ```
-
+---
 
 ## 📄 License  
-This project is licensed under the [General Public License](LICENSE).  
+This project is licensed under the **Personal Custom License**. The contents of this repository are proprietary and the exclusive property of Harsh Pandey. You may **not** download, use, or redistribute the code from this repository without explicit permission from the owner.
 
 ---
 

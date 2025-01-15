@@ -23,7 +23,7 @@ Welcome to my personal portfolio repository! This project showcases my journey a
 ---
 
 ## 🚀 Live Demo  
-[Visit My Portfolio](https://lucifer01430.github.io/Portfolio/) *(Replace with your live portfolio link)*  
+[Visit My Portfolio](https://lucifer01430.github.io/Portfolio/) 
 
 ---
 

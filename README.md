@@ -42,18 +42,18 @@ Portfolio/
 ```
 
 
-
 ## 📄 License  
 This project is licensed under the [General Public License](LICENSE).  
 
 ---
 
 ## 🌟 Connect with Me  
-- **Email:** [your-email@example.com](mailto:harshpandeylucifer@gmail.com)  
-- **GitHub:** ([https://github.com/HarshPandey](https://lucifer01430.github.io/Portfolio/) *(Replace with your GitHub link)*  
-- **LinkedIn:** [linkedin.com/in/HarshPandey]((https://www.linkedin.com/in/harsh-pandey-819a7b2a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) *(Replace with your LinkedIn profile link)*  
+- **Email:** [harshpandeylucifer@gmail.com](mailto:harshpandeylucifer@gmail.com)  
+- **GitHub:** [https://github.com/lucifer01430](https://github.com/lucifer01430)  
+- **LinkedIn:** [https://www.linkedin.com/in/harsh-pandey-819a7b2a0](https://www.linkedin.com/in/harsh-pandey-819a7b2a0)  
 
 ---
+
 
 ## 🙌 Acknowledgments  
 Special thanks to the amazing open-source community and the creators of **Bootstrap** for making development easier and more efficient.  

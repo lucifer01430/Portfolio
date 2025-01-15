@@ -1,2 +1,60 @@
-# Portfolio
-This is my updated Portfolio
+
+# Harsh Pandey - Personal Portfolio 🌐  
+
+Welcome to my personal portfolio repository! This project showcases my journey as a **Frontend Web Developer** with a passion for creating beautiful, responsive, and user-friendly websites. Built using **HTML5**, **CSS3**, **JavaScript**, and **Bootstrap**, this portfolio highlights my skills, projects, and professional accomplishments.  
+
+---
+
+## 📋 Features  
+- 🖥️ **Responsive Design:** Optimized for all screen sizes, from desktops to smartphones.  
+- 🎨 **Modern UI/UX:** Clean and engaging design to enhance user experience.  
+- 📁 **Project Showcase:** A curated collection of my best work, complete with live demos and source code links.  
+- 📄 **About Me:** An overview of my skills, experience, and professional background.  
+- 📞 **Contact Section:** Easily connect with me through integrated contact forms and social links.  
+
+---
+
+## 🛠️ Technologies Used  
+- **HTML5** - Structure and semantics  
+- **CSS3** - Styling and animations  
+- **JavaScript** - Interactivity and functionality  
+- **Bootstrap** - Responsive layout and components  
+
+---
+
+## 🚀 Live Demo  
+[Visit My Portfolio](https://lucifer01430.github.io/Portfolio/) *(Replace with your live portfolio link)*  
+
+---
+
+## 📂 Folder Structure  
+```
+Portfolio/
+│
+├── Assets/          # Contains all assets like images, fonts, CSS, and JS files
+├── LICENSE          # General Public License
+├── README.md        # Project README file
+├── about.html       # About Me page
+├── contact.html     # Contact page
+├── index.html       # Main landing page
+├── portfolio.html   # Portfolio showcase page
+└── resume.html      # Resume page
+```
+
+
+
+## 📄 License  
+This project is licensed under the [General Public License](LICENSE).  
+
+---
+
+## 🌟 Connect with Me  
+- **Email:** [your-email@example.com](mailto:harshpandeylucifer@gmail.com)  
+- **GitHub:** ([https://github.com/HarshPandey](https://lucifer01430.github.io/Portfolio/) *(Replace with your GitHub link)*  
+- **LinkedIn:** [linkedin.com/in/HarshPandey]((https://www.linkedin.com/in/harsh-pandey-819a7b2a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app) *(Replace with your LinkedIn profile link)*  
+
+---
+
+## 🙌 Acknowledgments  
+Special thanks to the amazing open-source community and the creators of **Bootstrap** for making development easier and more efficient.  
+

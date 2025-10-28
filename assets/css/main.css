@@ -1,12 +1,5 @@
 @charset "UTF-8";
 /*
-************
-*************************
-
-Template Name: Name - Bostami - HTML Personal Portfolio Template
-Description: Bostami – HTML Personal Portfolio Template can be used for many purposes. It’s a creative, minimal and clean design.It’s suitable for Designer, Developer, Specialist, Content Writer, Instructor, Photographer, Freelancer, Software Engineer, Teacher or others expert who Show their professional projects and services in digital way. It’s 100% responsive and Ultra Super Fast beacause it’s made with Latest html
-Author: elite-themes
-Version: 1.0
 
 -----------------------------------------------------------------------------------
 
@@ -4945,3 +4938,28 @@ textarea:focus::placeholder {
 .dark-theme {
     background: #1a1a1a;
 }
+
+
+/* Custom CSS */
+.equal-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.bostami-card-item {
+  height: 180px; /* 🔥 set equal height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Optional - Responsive adjustment for smaller screens */
+@media (max-width: 768px) {
+  .bostami-card-item {
+    height: auto;
+  }
+}
+

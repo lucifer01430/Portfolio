@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Skills — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder
+    </title>
+    <meta
+      name="description"
+      content="Explore Harsh Pandey's technical expertise in full stack development, cloud hosting, AI assisted development, workflow automation, and search visibility (SEO)."
+    />
+    <link rel="canonical" href="https://harshpandey.dev/skills.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harshpandey.dev/skills.html" />
+    <meta
+      property="og:title"
+      content="Skills — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="og:description"
+      content="Explore Harsh Pandey's technical expertise in full stack development, cloud hosting, AI assisted development, workflow automation, and search visibility (SEO)."
+    />
+    <meta
+      property="og:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://harshpandey.dev/skills.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Skills — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="twitter:description"
+      content="Explore Harsh Pandey's technical expertise in full stack development, cloud hosting, AI assisted development, workflow automation, and search visibility (SEO)."
+    />
+    <meta
+      property="twitter:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
+
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <nav class="site-nav" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-icon"><i class="fas fa-terminal"></i></div>
+          Harsh<span style="color: var(--accent2)">.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="mobile-menu-profile">
+            <div class="mobile-profile-wrap">
+              <img
+                src="assets/img/developer-profile.png"
+                alt="Harsh Pandey"
+                class="mobile-profile-img"
+              />
+              <div>
+                <div class="mobile-profile-name">Harsh Pandey</div>
+                <div class="mobile-profile-status">
+                  <span class="status-dot"></span> Available for Work
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html" class="active">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <div class="nav-status">Available for Work</div>
+          <button
+            class="theme-toggle-btn"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+          <button
+            class="nav-terminal-btn"
+            id="openTerminalNav"
+            aria-label="Open Terminal"
+          >
+            <i class="fas fa-terminal"></i>
+          </button>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-breadcrumb" data-aos="fade-right">
+          <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+          <span>Skills</span>
+        </div>
+        <div class="section-label animate-hero">
+          <i class="fas fa-code"></i> Expertise
+        </div>
+        <h1
+          class="section-title animate-hero-delay-1"
+          style="font-size: clamp(2.2rem, 5vw, 3.5rem)"
+        >
+          Technical <span class="gradient-text">Skills</span>
+        </h1>
+        <div class="section-divider animate-hero-delay-2"></div>
+        <p class="section-sub animate-hero-delay-2">
+          A comprehensive overview of the technologies, tools, and platforms I
+          work with daily.
+        </p>
+      </div>
+    </section>
+
+    <!-- SKILL CATEGORIES -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="grid-2" style="gap: 28px">
+          <!-- Frontend -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(56, 189, 248, 0.15); color: #38bdf8"
+              >
+                <i class="fas fa-palette"></i>
+              </div>
+              <div class="skill-category-title">Frontend Development</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>HTML5</span><span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>CSS3</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>JavaScript</span><span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Bootstrap</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>Responsive Design</span><span>92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="92%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(129, 140, 248, 0.15); color: #818cf8"
+              >
+                <i class="fas fa-server"></i>
+              </div>
+              <div class="skill-category-title">Backend Development</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>PHP</span><span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Python</span><span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Django</span><span>82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="82%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>REST APIs</span><span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Database -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(34, 197, 94, 0.15); color: #22c55e"
+              >
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="skill-category-title">Database & Storage</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>MySQL</span><span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="88%"
+                  style="background: linear-gradient(90deg, #22c55e, #38bdf8)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>SQLite</span><span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="75%"
+                  style="background: linear-gradient(90deg, #22c55e, #38bdf8)"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(245, 158, 11, 0.15); color: #f59e0b"
+              >
+                <i class="fas fa-tools"></i>
+              </div>
+              <div class="skill-category-title">Tools & Platforms</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Git & GitHub</span><span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="85%"
+                  style="background: linear-gradient(90deg, #f59e0b, #f43f5e)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>VPS Cloud</span><span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="80%"
+                  style="background: linear-gradient(90deg, #f59e0b, #f43f5e)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>hPanel</span><span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="85%"
+                  style="background: linear-gradient(90deg, #f59e0b, #f43f5e)"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Infrastructure -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(244, 63, 94, 0.15); color: #f43f5e"
+              >
+                <i class="fas fa-cloud"></i>
+              </div>
+              <div class="skill-category-title">Infrastructure & DevOps</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>SSL Management</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="90%"
+                  style="background: linear-gradient(90deg, #f43f5e, #818cf8)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>DNS Management</span><span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="88%"
+                  style="background: linear-gradient(90deg, #f43f5e, #818cf8)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Hosting Management</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="90%"
+                  style="background: linear-gradient(90deg, #f43f5e, #818cf8)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Deployment Pipelines</span><span>82%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="82%"
+                  style="background: linear-gradient(90deg, #f43f5e, #818cf8)"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>Website Migration</span><span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div
+                  class="skill-bar-fill"
+                  data-width="85%"
+                  style="background: linear-gradient(90deg, #f43f5e, #818cf8)"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SEO & Performance -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(56, 189, 248, 0.15); color: #38bdf8"
+              >
+                <i class="fas fa-chart-line"></i>
+              </div>
+              <div class="skill-category-title">SEO & Optimization</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Technical SEO</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Google Search Console</span><span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Google My Business & Local SEO</span><span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="85%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Search Visibility & Indexing</span><span>88%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="88%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>Performance & Web Vitals</span><span>82%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="82%"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- AI & Automation -->
+          <div
+            class="skill-category-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="skill-category-header">
+              <div
+                class="skill-category-icon"
+                style="background: rgba(129, 140, 248, 0.15); color: #818cf8"
+              >
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="skill-category-title">AI & Automation</div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Workflow Automation</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>AI Assisted Development</span><span>95%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="95%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Prompt Engineering</span><span>92%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="92%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper">
+              <div class="skill-bar-label">
+                <span>Vibe Coding</span><span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="90%"></div>
+              </div>
+            </div>
+            <div class="skill-bar-wrapper mb-0">
+              <div class="skill-bar-label">
+                <span>Content Creation</span><span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-bar-fill" data-width="80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div class="cta-section" data-aos="zoom-in">
+          <h2 class="cta-title">
+            Need These Skills for
+            <span class="gradient-text">Your Project?</span>
+          </h2>
+          <p class="cta-desc">
+            Let's discuss how my technical expertise can help bring your vision
+            to life.
+          </p>
+          <a href="contact.html" class="btn-primary-glow"
+            ><i class="fas fa-paper-plane"></i> Get In Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">Harsh.dev</div>
+            <p class="footer-desc">
+              Full Stack Web Developer crafting production-ready solutions from
+              idea to deployment. Specializing in PHP, Python, Django, and
+              scalable business applications.
+            </p>
+            <div class="footer-social">
+              <a href="mailto:harshpandeylucifer@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://www.github.com/lucifer01430"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/harshpandey0143/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://wa.me/919555299718"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://youtube.com/@sastadeveloper0143"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">More</div>
+            <ul class="footer-links">
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Contact</div>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:harshpandeylucifer@gmail.com"
+                  ><i
+                    class="fas fa-envelope"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Email Me</a
+                >
+              </li>
+              <li>
+                <a href="tel:+919555299718"
+                  ><i
+                    class="fas fa-phone"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  +91 95552 99718</a
+                >
+              </li>
+              <li>
+                <span style="color: var(--text-dim); font-size: 0.85rem"
+                  ><i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Lucknow, India</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <p class="footer-bottom-text">
+            © 2026 Harsh Pandey. Turning ideas into websites, software, and
+            scalable digital experiences.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/terminal.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

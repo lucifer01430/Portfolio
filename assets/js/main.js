@@ -347,3 +347,19 @@ AOS.init({
     setTheme(currentTheme === 'light' ? 'dark' : 'light');
   });
 })();
+
+// ── Preloader Safeguard ──
+// The preloader is handled inline in each HTML file for instant execution.
+// This safeguard ensures that if the load event has fired, the preloader is removed.
+(function () {
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.classList.add('fade-out');
+        setTimeout(() => preloader.remove(), 500);
+      }
+    }, 1200); // safety fallback delay
+  });
+})();
+

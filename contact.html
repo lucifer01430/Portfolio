@@ -69,6 +69,90 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- Developer Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot dot-r"></span>
+          <span class="terminal-dot dot-y"></span>
+          <span class="terminal-dot dot-g"></span>
+          <span class="terminal-title">bash - system_check</span>
+        </div>
+        <div class="terminal-body" id="preloader-terminal-body">
+          <div class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd-text">npm run dev:portfolio</span></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const body = document.getElementById("preloader-terminal-body");
+        const isFirstLoad = !sessionStorage.getItem("portfolio-loaded");
+        const steps = [
+          { text: "Loading modules...", type: "info", delay: isFirstLoad ? 200 : 80 },
+          { text: "Resolving developer.profile...", type: "info", delay: isFirstLoad ? 350 : 120 },
+          { text: "Est. secure connection [OK]", type: "success", delay: isFirstLoad ? 500 : 180 },
+          { text: "Portfolio ready.", type: "success", delay: isFirstLoad ? 650 : 220 }
+        ];
+
+        let currentStep = 0;
+        function runNextStep() {
+          if (currentStep >= steps.length) {
+            const cursorLine = document.createElement("div");
+            cursorLine.className = "terminal-line";
+            cursorLine.innerHTML = '<span class="prompt">&gt;</span><span class="blink-cursor"></span>';
+            body.appendChild(cursorLine);
+            sessionStorage.setItem("portfolio-loaded", "true");
+            return;
+          }
+
+          const step = steps[currentStep];
+          setTimeout(() => {
+            const line = document.createElement("div");
+            line.className = "terminal-line";
+            if (step.type === "success") {
+              line.innerHTML = '<span class="success-text">✔ ' + step.text + '</span>';
+            } else if (step.type === "info") {
+              line.innerHTML = '<span class="info-text">i ' + step.text + '</span>';
+            } else {
+              line.innerHTML = "<span>" + step.text + "</span>";
+            }
+            body.appendChild(line);
+            currentStep++;
+            runNextStep();
+          }, step.delay);
+        }
+
+        runNextStep();
+
+        function startFadeout() {
+          const minShowTime = isFirstLoad ? 950 : 350;
+          const startTime = Date.now();
+
+          function checkAndFade() {
+            const elapsed = Date.now() - startTime;
+            if (elapsed >= minShowTime) {
+              const preloader = document.getElementById("preloader");
+              if (preloader) {
+                preloader.classList.add("fade-out");
+                setTimeout(() => {
+                  preloader.remove();
+                }, 500);
+              }
+            } else {
+              setTimeout(checkAndFade, 50);
+            }
+          }
+          checkAndFade();
+        }
+
+        if (document.readyState === "complete") {
+          startFadeout();
+        } else {
+          window.addEventListener("load", startFadeout);
+        }
+      })();
+    </script>
+
     <div class="bg-orb bg-orb-1"></div>
     <div class="bg-orb bg-orb-2"></div>
     <div class="bg-orb bg-orb-3"></div>
@@ -279,13 +363,13 @@
                   ><i class="fas fa-envelope"></i
                 ></a>
                 <a
-                  href="#"
+                  href="https://www.github.com/lucifer01430"
                   aria-label="GitHub"
                   style="width: 44px; height: 44px"
                   ><i class="fab fa-github"></i
                 ></a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/harshpandey0143/"
                   aria-label="LinkedIn"
                   style="width: 44px; height: 44px"
                   ><i class="fab fa-linkedin-in"></i

@@ -1,420 +1,992 @@
-<!Doctype html>
-<html class="no-js" lang="zxx">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      About — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder
+    </title>
+    <meta
+      name="description"
+      content="Learn about Harsh Pandey — a Freelance Full Stack Developer and SaaS Builder with 3+ years of experience building production-ready web solutions and managing hosting infrastructure."
+    />
+    <link rel="canonical" href="https://harshpandey.dev/about.html" />
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>About Me</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harshpandey.dev/about.html" />
+    <meta
+      property="og:title"
+      content="About — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="og:description"
+      content="Freelance Full Stack Developer and SaaS Builder with 3+ years of experience building production-ready solutions and managing hosting infrastructure."
+    />
+    <meta
+      property="og:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/odometer.min.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/swipper.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://harshpandey.dev/about.html" />
+    <meta
+      property="twitter:title"
+      content="About — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="twitter:description"
+      content="Freelance Full Stack Developer and SaaS Builder with 3+ years of experience building production-ready solutions and managing hosting infrastructure."
+    />
+    <meta
+      property="twitter:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
 
-    <!-- Favicon Links -->
-    <link rel="icon" type="image/png" href="/assets/img/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-title" content="Harsh" />
-    <link rel="manifest" href="/assets/img/favicon/site.webmanifest" />
-</head>
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-<body>
-
-    <div class="page-wrapper page-wrapper-2" data-background="assets/img/bg/page-bg-1.jpg">
-        <!-- PRELOADER -->
-        <div id="preloader">
-            <div class="loader_line"></div>
+      <!-- Favicons -->
+<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Harsh" />
+<link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Developer Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot dot-r"></span>
+          <span class="terminal-dot dot-y"></span>
+          <span class="terminal-dot dot-g"></span>
+          <span class="terminal-title">bash - system_check</span>
         </div>
-        <!-- /PRELOADER -->
-        <!-- Chat-Bot-Start -->
+        <div class="terminal-body" id="preloader-terminal-body">
+          <div class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd-text">npm run dev:portfolio</span></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const body = document.getElementById("preloader-terminal-body");
+        const isFirstLoad = !sessionStorage.getItem("portfolio-loaded");
+        const steps = [
+          { text: "Loading modules...", type: "info", delay: isFirstLoad ? 200 : 80 },
+          { text: "Resolving developer.profile...", type: "info", delay: isFirstLoad ? 350 : 120 },
+          { text: "Est. secure connection [OK]", type: "success", delay: isFirstLoad ? 500 : 180 },
+          { text: "Portfolio ready.", type: "success", delay: isFirstLoad ? 650 : 220 }
+        ];
 
-        <a href="https://mediafiles.botpress.cloud/0999a311-10ab-4034-be31-3361db344cfd/webchat/bot.html"
-            target="_blank">
-            <div class="chat-bot">
-                <div class="chat-icon">
-                    <img src="assets/img/b1.png" alt="Chat Icon">
-                </div>
-                <div class="chat-window">
+        let currentStep = 0;
+        function runNextStep() {
+          if (currentStep >= steps.length) {
+            const cursorLine = document.createElement("div");
+            cursorLine.className = "terminal-line";
+            cursorLine.innerHTML = '<span class="prompt">&gt;</span><span class="blink-cursor"></span>';
+            body.appendChild(cursorLine);
+            sessionStorage.setItem("portfolio-loaded", "true");
+            return;
+          }
+
+          const step = steps[currentStep];
+          setTimeout(() => {
+            const line = document.createElement("div");
+            line.className = "terminal-line";
+            if (step.type === "success") {
+              line.innerHTML = '<span class="success-text">✔ ' + step.text + '</span>';
+            } else if (step.type === "info") {
+              line.innerHTML = '<span class="info-text">i ' + step.text + '</span>';
+            } else {
+              line.innerHTML = "<span>" + step.text + "</span>";
+            }
+            body.appendChild(line);
+            currentStep++;
+            runNextStep();
+          }, step.delay);
+        }
+
+        runNextStep();
+
+        function startFadeout() {
+          const minShowTime = isFirstLoad ? 950 : 350;
+          const startTime = Date.now();
+
+          function checkAndFade() {
+            const elapsed = Date.now() - startTime;
+            if (elapsed >= minShowTime) {
+              const preloader = document.getElementById("preloader");
+              if (preloader) {
+                preloader.classList.add("fade-out");
+                setTimeout(() => {
+                  preloader.remove();
+                }, 500);
+              }
+            } else {
+              setTimeout(checkAndFade, 50);
+            }
+          }
+          checkAndFade();
+        }
+
+        if (document.readyState === "complete") {
+          startFadeout();
+        } else {
+          window.addEventListener("load", startFadeout);
+        }
+      })();
+    </script>
+
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <!-- NAVBAR -->
+    <nav class="site-nav" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-icon"><i class="fas fa-terminal"></i></div>
+          Harsh<span style="color: var(--accent2)">.dev</span>
         </a>
-        <!-- Chat window content goes here -->
-        <!-- <iframe src="https://mediafiles.botpress.cloud/0999a311-10ab-4034-be31-3361db344cfd/webchat/bot.html" width="300" height="400" frameborder="0"></iframe> -->
-    </div>
-    </div>
-    </a>
-    <!-- Chat-Bot-End -->
-    <!-- header-start -->
-    <div class="bostami-header-area mb-30 z-index-5">
-        <div class="container">
-            <div class="bostami-header-wrap main-style-2">
-                <div class="row">
-                    <!-- logo -->
-                    <div class="col-lg-2 col-md-6 col-sm-4 col-4 d-flex align-items-center">
-                        <div class="bostami-header-logo hvr-float-shadow">
-                            <a class="site-logo" href="index.html">
-                                <img src="assets/img/logo/hp.png" alt="logo">
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- menu btn -->
-                    <div class="col-lg-10 col-md-6 col-sm-8 col-8">
-                        <div class="header-right-flex">
-                            <div class="bostami-main-menu-wrap ">
-                                <nav class="bastami-main-menu main_menu_2">
-                                    <ul>
-                                        <li class="active hvr-float">
-                                            <a href="index.html">
-                                                <span>
-                                                    <i class="fa-light fa-house"></i>
-                                                </span>
-                                                home
-                                            </a>
-                                        </li>
-                                        <li class="hvr-float">
-                                            <a href="about.html">
-                                                <span>
-                                                    <i class="fa-light fa-address-card"></i>
-                                                </span>
-                                                about
-                                            </a>
-                                        </li>
-                                        <li class="hvr-float">
-                                            <a href="resume.html">
-                                                <span>
-                                                    <i class="fa-light fa-file-user"></i>
-                                                </span>
-                                                Resume
-                                            </a>
-                                        </li>
-                                        <li class="hvr-float">
-                                            <a href="portfolio.html">
-                                                <span>
-                                                    <i class="fa-light fa-briefcase"></i>
-                                                </span>
-                                                Works
-                                            </a>
-                                        </li>
-
-                                        <li class="hvr-float">
-                                            <a href="contact.html">
-                                                <span>
-                                                    <i class="fa-light fa-address-book"></i>
-                                                </span>
-                                                contact
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                            <div class="bostami-header-menu-btn text-right ml-30">
-                                <div class="dark-btn dark-btn-2">
-                                    <i class="fa-light fa-moon dark-btn-icon"></i>
-                                    <i class="fa-light fa-sun dark-btn-icon"></i>
-                                </div>
-                                <div class="menu-btn-wrap d-lg-none">
-                                    <div class="menu-btn menu-btn-2 toggle_menu">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <ul class="nav-links" id="navLinks">
+          <li class="mobile-menu-profile">
+            <div class="mobile-profile-wrap">
+              <img
+                src="assets/img/developer-profile.png"
+                alt="Harsh Pandey"
+                class="mobile-profile-img"
+              />
+              <div>
+                <div class="mobile-profile-name">Harsh Pandey</div>
+                <div class="mobile-profile-status">
+                  <span class="status-dot"></span> Available for Work
                 </div>
+              </div>
             </div>
-
-            <!-- mobile menu -->
-            <div class="mobile-menu-wrap">
-                <div class="mobile-menu mobile_menu_2">
-                </div>
-            </div>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <div class="nav-status">Available for Work</div>
+          <button
+            class="theme-toggle-btn"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+          <button
+            class="nav-terminal-btn"
+            id="openTerminalNav"
+            aria-label="Open Terminal"
+          >
+            <i class="fas fa-terminal"></i>
+          </button>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
-    </div>
-    <!-- header-end -->
+      </div>
+    </nav>
 
-
-    <div class="bostami-page-area z-index-3">
-        <div class="container">
-            <div class="bostami-page-wrap pt-60 pl-80 pr-80">
-
-                <!-- page-title -->
-                <div class="page-tilte-2-wrap">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bostami-page-title-wrap mb-40">
-                                <h2 class="page-title">About Me</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- about me -->
-                <div class="about-me-2-wrap">
-                    <div class="row">
-
-                        <!-- img -->
-                        <div class="col-lg-4 col-md-8">
-                            <div class="bostami-parsonal-info-img hvr-pop">
-                                <img src="assets/img/parsonal-info/2.jpg" alt="personal-info">
-                            </div>
-                        </div>
-
-                        <!-- about -->
-                        <div class="col-lg-8 col-md-12">
-                            <div class="bostami-parsonal-info-wrap mb-40">
-
-                                <!-- name -->
-                                <h4 class="bostami-parsonal-info-title">Who am i?</h4>
-                                <p class="bostami-parsonal-info-bio-text">
-                                    I am <b>Harsh Pandey</b>, a dedicated and detail-oriented <b>Front-End Web
-                                        Developer</b> from Barabanki, Uttar Pradesh, with over <b>1.5 years of
-                                        professional experience</b> in building responsive and user-friendly websites. I
-                                    am currently pursuing my <b>B.Tech in Computer Science</b> from <b>AKTU</b> and
-                                    working as a <b>Front-End Developer at <a href="https://theaviyaan.com"
-                                            target="_blank" rel="noopener noreferrer">The Aviyaan</a></b>, where I
-                                    design and maintain modern, performance-optimized web solutions for hospitality and
-                                    wellness clients.
-                                </p>
-
-                                <p class="bostami-parsonal-info-bio-text">
-                                    My expertise includes <b>HTML, CSS, JavaScript, PHP, and Python (Django)</b>, with a
-                                    strong focus on <b>responsive design, SEO-friendly development, and cross-browser
-                                        compatibility</b>. I have successfully delivered multiple live projects across
-                                    healthcare, real estate, and digital marketing sectors — ensuring clean code,
-                                    seamless UX, and scalability. Passionate about continuous learning and innovation, I
-                                    enjoy transforming ideas into visually appealing and functional digital experiences.
-                                </p>
-
-
-
-
-                            </div>
-                        </div>
-
-
-                        <!-- contact -->
-                        <div class="col-lg-8 col-md-12">
-                            <div class="bostami-parsonal-info-contact">
-                                <h3 class="title">Personal Info</h3>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="bostami-parsonal-info-contact-item phone">
-                                            <a href="tel:+919555299718">
-                                                <div class="icon">
-                                                    <i class="fa-solid fa-mobile-screen-button"></i>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Phone</span>
-                                                    <p>+91-9555299718</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="bostami-parsonal-info-contact-item email">
-                                            <a href="mailto:harshpandeylucifer@gmail.com">
-                                                <div class="icon">
-                                                    <i class="fa-regular fa-envelope-open-text"></i>
-                                                </div>
-                                                <div class="text">
-                                                    <span>Email</span>
-                                                    <p style="text-transform:none;">harshpandeylucifer@gmail.com</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="bostami-parsonal-info-contact-item github">
-                                            <a href="https://github.com/lucifer01430" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <div class="icon">
-                                                    <i class="fa-brands fa-github"></i>
-                                                </div>
-                                                <div class="text">
-                                                    <span>GitHub</span>
-                                                    <p>github.com/lucifer01430</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="bostami-parsonal-info-contact-item linkedin">
-                                            <a href="https://www.linkedin.com/in/harshpandey0143/" target="_blank"
-                                                rel="noopener noreferrer">
-                                                <div class="icon">
-                                                    <i class="fa-brands fa-linkedin"></i>
-                                                </div>
-                                                <div class="text">
-                                                    <span>LinkedIn</span>
-                                                    <p>linkedin.com/in/harsh-pandey0143</p>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- what i do 2 -->
-                <div class="what-i-do-2 mb-50">
-                    <div class="row">
-
-                        <!-- section title -->
-                        <div class="col-12">
-                            <div class="bostami-section-title-wrap mb-25">
-                                <h3 class="section-title">What I Do!</h3>
-                            </div>
-                        </div>
-
-                        <!-- Web Development -->
-                        <div class="col-md-12 hvr-float">
-                            <div class="bostami-what-do-item bg-prink">
-                                <div class="icon">
-                                    <i class="fa-solid fa-code"></i>
-                                </div>
-                                <div class="text">
-                                    <h4 class="title">Front-End Web Development</h4>
-                                    <p>
-                                        As a <b>Front-End Developer</b> with <b>1.5+ years of professional
-                                            experience</b>, I build
-                                        <b>responsive, SEO-optimized, and performance-driven websites</b> that deliver
-                                        seamless user experiences.
-                                        Skilled in <b>HTML, CSS, JavaScript, PHP, and Python (Django)</b>, I focus on
-                                        clean code,
-                                        cross-browser compatibility, and visually appealing designs. I’ve developed
-                                        multiple live projects for
-                                        <b>healthcare, real estate, and digital marketing</b> clients — turning ideas
-                                        into engaging digital products.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- UI/UX & Design -->
-                        <div class="col-md-12 hvr-float">
-                            <div class="bostami-what-do-item bg-catkrill">
-                                <div class="icon">
-                                    <i class="fa-solid fa-layer-group"></i>
-                                </div>
-                                <div class="text">
-                                    <h4 class="title">UI/UX Design & Prototyping</h4>
-                                    <p>
-                                        I craft <b>modern, user-centric interfaces</b> that align aesthetics with
-                                        functionality.
-                                        My process involves wireframing, responsive layout structuring, and optimizing
-                                        visual hierarchy for better accessibility. Whether it’s a landing page or a full
-                                        web app,
-                                        I ensure every interaction feels intuitive and engaging.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- SEO & Performance -->
-                        <div class="col-md-12 hvr-float">
-                            <div class="bostami-what-do-item bg-cyan">
-                                <div class="icon">
-                                    <i class="fa-solid fa-chart-line"></i>
-                                </div>
-                                <div class="text">
-                                    <h4 class="title">SEO & Website Optimization</h4>
-                                    <p>
-                                        Beyond visuals, I specialize in optimizing websites for <b>speed, search engine
-                                            visibility,
-                                            and mobile performance</b>. From proper semantic HTML to lazy loading and
-                                        meta optimization,
-                                        my goal is to make every project fast, discoverable, and effective.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Freelance & Collaboration -->
-                        <div class="col-md-12 hvr-float">
-                            <div class="bostami-what-do-item bg-yellow">
-                                <div class="icon">
-                                    <i class="fa-solid fa-handshake"></i>
-                                </div>
-                                <div class="text">
-                                    <h4 class="title">Freelance Projects & Collaboration</h4>
-                                    <p>
-                                        As a <b>freelance web developer</b>, I’ve delivered live websites across various
-                                        industries —
-                                        managing <b>end-to-end development</b> from design to deployment.
-                                        I enjoy collaborating with creative teams, businesses, and clients to bring
-                                        ideas to life
-                                        while maintaining <b>professional quality and scalability</b>.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Summary -->
-                        <div class="col-md-12 hvr-pop">
-                            <div class="bostami-what-do-item bg-rose">
-                                <div class="text">
-                                    <p>
-                                        <b>By combining design thinking with development expertise, I aim to build
-                                            digital
-                                            experiences that are beautiful, functional, and impactful.</b>
-                                        Every project I create reflects my passion for technology, innovation, and
-                                        continuous learning.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-
-                <!-- footer -->
-                <div class="footer-copyright text-center pt-25 pb-25">
-                    <span>© 2022 All Rights Reserved by <b>
-                            <a class="hvr-float-shadow" href="https://lucifer01430.github.io/Portfolio/" target="_blank"
-                                rel="noopener noreferrer">Harsh Pandey</a></b>.</span>
-                </div>
-
-            </div>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="page-hero-inner text-left">
+        <div class="page-hero-breadcrumb">
+          <a href="index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>About</span>
         </div>
-    </div>
 
+        <div class="section-label mt-4">
+          <i class="fas fa-user"></i> About Me
+        </div>
 
-    </div>
+        <h1 class="section-title mt-4">
+          Know More About
+          <span class="gradient-text">Harsh Pandey</span>
+        </h1>
+      </div>
+    </section>
 
-    <!-- JS here -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/swipper-bundle.min.js"></script>
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/odometer.min.js"></script>
-    <script src="assets/js/appear.min.js"></script>
+    <!-- ABOUT INTRO -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="grid-2" style="gap: 40px; align-items: start">
+          <!-- Left: Intro Card -->
+          <div data-aos="fade-right">
+            <div class="about-intro-card">
+              <div class="about-avatar-img-container">
+                <img
+                  src="assets/img/developer-profile.png"
+                  alt="Harsh Pandey"
+                  class="about-profile-img"
+                />
+              </div>
+              <div class="about-name">Harsh Pandey</div>
+              <div class="about-role">
+                Freelance Full Stack Developer & SaaS Builder
+              </div>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.93rem;
+                  line-height: 1.85;
+                  margin-bottom: 20px;
+                "
+              >
+                I'm a Freelance Full Stack Developer and SaaS Builder with more
+                than
+                <strong style="color: var(--text-main)"
+                  >3 years of professional experience</strong
+                >
+                building websites, custom business software, and
+                production-ready digital solutions.
+              </p>
+              <p
+                style="
+                  color: var(--text-muted);
+                  font-size: 0.93rem;
+                  line-height: 1.85;
+                  margin-bottom: 24px;
+                "
+              >
+                My strength is
+                <strong style="color: var(--accent)"
+                  >transforming business requirements into scalable software
+                  solutions</strong
+                >. I design database architectures, set up cloud hostings, and
+                deploy secure integrations.
+              </p>
+              <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <div class="hero-meta-item">
+                  <i class="fas fa-map-marker-alt" style="color: #38bdf8"></i>
+                  Lucknow, India
+                </div>
+                <div class="hero-meta-item">
+                  <i class="fas fa-laptop-code" style="color: #818cf8"></i>
+                  Independent / Freelancer
+                </div>
+                <div class="hero-meta-item">
+                  <i class="fas fa-calendar" style="color: #22c55e"></i> 3+
+                  Years
+                </div>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-4 justify-content-center">
+                <a
+                  href="assets/resume/harsh-resume.pdf"
+                  class="btn-primary-glow"
+                  download
+                >
+                  <i class="fas fa-download"></i> Download Resume
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Right: What I Do -->
+          <div data-aos="fade-left">
+            <h3
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                font-size: 1.4rem;
+                margin-bottom: 24px;
+              "
+            >
+              What I <span class="gradient-text">Specialize In</span>
+            </h3>
+            <div class="d-flex flex-column" style="gap: 16px">
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(56, 189, 248, 0.15);
+                      color: #38bdf8;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-laptop-code"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      Full Stack Development
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      Frontend to backend — complete web solutions
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(129, 140, 248, 0.15);
+                      color: #818cf8;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-cube"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      SaaS & Business Software
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      Custom platforms for real business needs
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(34, 197, 94, 0.15);
+                      color: #22c55e;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-server"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      Deployment & Infrastructure
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      VPS, SSL, DNS, hosting management
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(245, 158, 11, 0.15);
+                      color: #f59e0b;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-search"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      SEO & Performance
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      Core Web Vitals, Search Console, speed
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(236, 72, 153, 0.15);
+                      color: #ec4899;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-robot"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      Automation & AI Solutions
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      Workflow automation, AI integrations, business efficiency
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="glass-card" style="padding: 20px 24px">
+                <div class="d-flex align-center gap-3">
+                  <div
+                    class="skill-chip-icon"
+                    style="
+                      background: rgba(168, 85, 247, 0.15);
+                      color: #a855f7;
+                      width: 44px;
+                      height: 44px;
+                      min-width: 44px;
+                    "
+                  >
+                    <i class="fas fa-cart-shopping"></i>
+                  </div>
+                  <div>
+                    <div
+                      style="
+                        font-weight: 700;
+                        font-size: 0.95rem;
+                        margin-bottom: 2px;
+                      "
+                    >
+                      E-Commerce Development
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-muted)">
+                      Online stores, payment gateways, inventory systems
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY & EXPERTISE DETAILED -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header-center" data-aos="fade-up">
+          <div class="section-label">
+            <i class="fas fa-history"></i> My Journey
+          </div>
+          <h2 class="section-title">
+            From Idea to <span class="gradient-text">Production</span>
+          </h2>
+          <div class="section-divider"></div>
+          <p class="section-sub">
+            A breakdown of my experience building digital solutions and managing
+            hosting infrastructure.
+          </p>
+        </div>
+
+        <div class="grid-2 mt-5" style="gap: 32px">
+          <!-- Freelance Journey & Production Experience -->
+          <div class="glass-card" data-aos="fade-right">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: var(--accent);
+              "
+            >
+              <i class="fas fa-road" style="margin-right: 8px"></i> Freelance
+              Journey & Production
+            </h4>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 14px;
+              "
+            >
+              My journey started as an independent freelancer, working directly
+              with business owners to understand their pain points and build
+              custom solutions. Over time, this evolved into building
+              large-scale, production-ready web systems.
+            </p>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+              "
+            >
+              I specialize in taking raw ideas and building them into live
+              products. Whether it is a clinic management portal or an online
+              booking engine, I focus on performance, security, and exceptional
+              user experience.
+            </p>
+          </div>
+
+          <!-- SaaS & Business Software Development -->
+          <div class="glass-card" data-aos="fade-left">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: var(--accent2);
+              "
+            >
+              <i class="fas fa-cubes" style="margin-right: 8px"></i> SaaS &
+              Business Software
+            </h4>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 14px;
+              "
+            >
+              I have designed and built custom Software-as-a-Service (SaaS)
+              applications and complex business management software. I
+              understand multi-tenancy, user roles, data visualization, and
+              automated billing.
+            </p>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+              "
+            >
+              My business solutions are designed to automate manual tasks and
+              integrate with third-party tools to optimize daily workflows for
+              companies.
+            </p>
+          </div>
+
+          <!-- Hosting & Infrastructure Management -->
+          <div class="glass-card" data-aos="fade-right">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: var(--success);
+              "
+            >
+              <i class="fas fa-server" style="margin-right: 8px"></i> Hosting &
+              Infrastructure
+            </h4>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 14px;
+              "
+            >
+              A great application needs a solid foundation. I manage hosting
+              infrastructure, configure VPS (Virtual Private Servers), set up
+              SSL certificates, manage DNS settings, and monitor system health.
+            </p>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+              "
+            >
+              I write deployment scripts and configure CI/CD pipelines to ensure
+              seamless updates with minimal downtime for production sites.
+            </p>
+          </div>
+
+          <!-- SEO & Search Visibility -->
+          <div class="glass-card" data-aos="fade-left">
+            <h4
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 16px;
+                color: var(--warning);
+              "
+            >
+              <i class="fas fa-search" style="margin-right: 8px"></i> SEO &
+              Search Visibility
+            </h4>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+                margin-bottom: 14px;
+              "
+            >
+              Building a website is only half the battle; people need to find
+              it. I implement technical SEO, setup and manage Google Search
+              Console and Google My Business profiles.
+            </p>
+            <p
+              style="
+                font-size: 0.92rem;
+                color: var(--text-muted);
+                line-height: 1.8;
+              "
+            >
+              I optimize site speed, structure content hierarchy, submit
+              sitemaps, and resolve crawl errors to ensure high search indexing
+              and local search visibility.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POSITIONING -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div class="section-header-center" data-aos="fade-up">
+          <div class="section-label">
+            <i class="fas fa-star"></i> Positioning
+          </div>
+          <h2 class="section-title">
+            More Than Just a <span class="gradient-text">Developer</span>
+          </h2>
+          <div class="section-divider"></div>
+          <p class="section-sub">
+            I position myself as someone who can build complete production
+            systems from idea to deployment.
+          </p>
+        </div>
+        <div class="grid-3 mt-5">
+          <div
+            class="glass-card text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              style="
+                width: 64px;
+                height: 64px;
+                border-radius: 18px;
+                background: rgba(56, 189, 248, 0.15);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin: 0 auto 18px;
+                color: #38bdf8;
+              "
+            >
+              <i class="fas fa-code"></i>
+            </div>
+            <h5
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 8px;
+              "
+            >
+              Software Engineer
+            </h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted)">
+              Writing clean, maintainable code following best practices and
+              design patterns.
+            </p>
+          </div>
+          <div
+            class="glass-card text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              style="
+                width: 64px;
+                height: 64px;
+                border-radius: 18px;
+                background: rgba(129, 140, 248, 0.15);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin: 0 auto 18px;
+                color: #818cf8;
+              "
+            >
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h5
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 8px;
+              "
+            >
+              SaaS Builder
+            </h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted)">
+              Building complete SaaS platforms with scalable architecture and
+              clean UX.
+            </p>
+          </div>
+          <div
+            class="glass-card text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              style="
+                width: 64px;
+                height: 64px;
+                border-radius: 18px;
+                background: rgba(34, 197, 94, 0.15);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.5rem;
+                margin: 0 auto 18px;
+                color: #22c55e;
+              "
+            >
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h5
+              style="
+                font-family: &quot;Syne&quot;, sans-serif;
+                font-weight: 700;
+                margin-bottom: 8px;
+              "
+            >
+              Technical Consultant
+            </h5>
+            <p style="font-size: 0.85rem; color: var(--text-muted)">
+              Advising businesses on technical decisions, architecture, and
+              digital strategy.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES -->
+    <section class="section">
+      <div class="section-inner">
+        <div data-aos="fade-right">
+          <div class="section-label">
+            <i class="fas fa-industry"></i> Industries
+          </div>
+          <h2 class="section-title">
+            Industries I've <span class="gradient-text">Worked In</span>
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="industry-tags mt-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="industry-tag">
+            <i class="fas fa-heartbeat" style="color: #f43f5e"></i> Healthcare
+          </div>
+          <div class="industry-tag">
+            <i class="fas fa-graduation-cap" style="color: #38bdf8"></i>
+            Education
+          </div>
+          <div class="industry-tag">
+            <i class="fas fa-hotel" style="color: #818cf8"></i> Hospitality
+          </div>
+          <div class="industry-tag">
+            <i class="fas fa-home" style="color: #22c55e"></i> Real Estate
+          </div>
+          <div class="industry-tag">
+            <i class="fas fa-store" style="color: #f59e0b"></i> E-Commerce
+          </div>
+          <div class="industry-tag">
+            <i class="fas fa-briefcase" style="color: #38bdf8"></i> Business
+            Services
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div class="cta-section" data-aos="zoom-in">
+          <h2 class="cta-title">
+            Ready to Work <span class="gradient-text">Together?</span>
+          </h2>
+          <p class="cta-desc">
+            I'm available for freelance projects, full-time roles, and technical
+            consulting engagements.
+          </p>
+          <a href="contact.html" class="btn-primary-glow"
+            ><i class="fas fa-paper-plane"></i> Get In Touch</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+   <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">Harsh.dev</div>
+            <p class="footer-desc">
+              Full Stack Web Developer crafting production-ready solutions from
+              idea to deployment. Specializing in PHP, Python, Django, and
+              scalable business applications.
+            </p>
+            <div class="footer-social">
+              <a href="mailto:harshpandeylucifer@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://www.github.com/lucifer01430"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/harshpandey0143/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://wa.me/919555299718"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://youtube.com/@sastadeveloper0143"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">More</div>
+            <ul class="footer-links">
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Contact</div>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:harshpandeylucifer@gmail.com"
+                  ><i
+                    class="fas fa-envelope"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Email Me</a
+                >
+              </li>
+              <li>
+                <a href="tel:+919555299718"
+                  ><i
+                    class="fas fa-phone"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  +91 95552 99718</a
+                >
+              </li>
+              <li>
+                <span style="color: var(--text-dim); font-size: 0.85rem"
+                  ><i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Lucknow, India</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <p class="footer-bottom-text">
+            © 2026 Harsh Pandey. Turning ideas into websites, software, and
+            scalable digital experiences.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/terminal.js"></script>
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

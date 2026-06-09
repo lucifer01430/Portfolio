@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Experience — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder
+    </title>
+    <meta
+      name="description"
+      content="Harsh Pandey's professional career journey — a Freelance Full Stack Developer and SaaS Builder. 3+ years of experience delivering production-ready web solutions."
+    />
+    <link rel="canonical" href="https://harshpandey.dev/experience.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://harshpandey.dev/experience.html" />
+    <meta
+      property="og:title"
+      content="Experience — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="og:description"
+      content="Harsh Pandey's professional career journey — a Freelance Full Stack Developer and SaaS Builder. 3+ years of experience delivering production-ready web solutions."
+    />
+    <meta
+      property="og:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://harshpandey.dev/experience.html"
+    />
+    <meta
+      property="twitter:title"
+      content="Experience — Harsh Pandey | Freelance Full Stack Developer & SaaS Builder"
+    />
+    <meta
+      property="twitter:description"
+      content="Harsh Pandey's professional career journey — a Freelance Full Stack Developer and SaaS Builder. 3+ years of experience delivering production-ready web solutions."
+    />
+    <meta
+      property="twitter:image"
+      content="https://harshpandey.dev/assets/img/developer-profile.png"
+    />
+
+    <script>
+      (function () {
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+      })();
+    </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+      <!-- Favicons -->
+<link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Harsh" />
+<link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Developer Preloader -->
+    <div id="preloader" class="preloader">
+      <div class="preloader-terminal">
+        <div class="terminal-header">
+          <span class="terminal-dot dot-r"></span>
+          <span class="terminal-dot dot-y"></span>
+          <span class="terminal-dot dot-g"></span>
+          <span class="terminal-title">bash - system_check</span>
+        </div>
+        <div class="terminal-body" id="preloader-terminal-body">
+          <div class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd-text">npm run dev:portfolio</span></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const body = document.getElementById("preloader-terminal-body");
+        const isFirstLoad = !sessionStorage.getItem("portfolio-loaded");
+        const steps = [
+          { text: "Loading modules...", type: "info", delay: isFirstLoad ? 200 : 80 },
+          { text: "Resolving developer.profile...", type: "info", delay: isFirstLoad ? 350 : 120 },
+          { text: "Est. secure connection [OK]", type: "success", delay: isFirstLoad ? 500 : 180 },
+          { text: "Portfolio ready.", type: "success", delay: isFirstLoad ? 650 : 220 }
+        ];
+
+        let currentStep = 0;
+        function runNextStep() {
+          if (currentStep >= steps.length) {
+            const cursorLine = document.createElement("div");
+            cursorLine.className = "terminal-line";
+            cursorLine.innerHTML = '<span class="prompt">&gt;</span><span class="blink-cursor"></span>';
+            body.appendChild(cursorLine);
+            sessionStorage.setItem("portfolio-loaded", "true");
+            return;
+          }
+
+          const step = steps[currentStep];
+          setTimeout(() => {
+            const line = document.createElement("div");
+            line.className = "terminal-line";
+            if (step.type === "success") {
+              line.innerHTML = '<span class="success-text">✔ ' + step.text + '</span>';
+            } else if (step.type === "info") {
+              line.innerHTML = '<span class="info-text">i ' + step.text + '</span>';
+            } else {
+              line.innerHTML = "<span>" + step.text + "</span>";
+            }
+            body.appendChild(line);
+            currentStep++;
+            runNextStep();
+          }, step.delay);
+        }
+
+        runNextStep();
+
+        function startFadeout() {
+          const minShowTime = isFirstLoad ? 950 : 350;
+          const startTime = Date.now();
+
+          function checkAndFade() {
+            const elapsed = Date.now() - startTime;
+            if (elapsed >= minShowTime) {
+              const preloader = document.getElementById("preloader");
+              if (preloader) {
+                preloader.classList.add("fade-out");
+                setTimeout(() => {
+                  preloader.remove();
+                }, 500);
+              }
+            } else {
+              setTimeout(checkAndFade, 50);
+            }
+          }
+          checkAndFade();
+        }
+
+        if (document.readyState === "complete") {
+          startFadeout();
+        } else {
+          window.addEventListener("load", startFadeout);
+        }
+      })();
+    </script>
+
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+
+    <nav class="site-nav" id="navbar">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-brand">
+          <div class="nav-brand-icon"><i class="fas fa-terminal"></i></div>
+          Harsh<span style="color: var(--accent2)">.dev</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li class="mobile-menu-profile">
+            <div class="mobile-profile-wrap">
+              <img
+                src="assets/img/developer-profile.png"
+                alt="Harsh Pandey"
+                class="mobile-profile-img"
+              />
+              <div>
+                <div class="mobile-profile-name">Harsh Pandey</div>
+                <div class="mobile-profile-status">
+                  <span class="status-dot"></span> Available for Work
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-3">
+          <div class="nav-status">Available for Work</div>
+          <button
+            class="theme-toggle-btn"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+          <button
+            class="nav-terminal-btn"
+            id="openTerminalNav"
+            aria-label="Open Terminal"
+          >
+            <i class="fas fa-terminal"></i>
+          </button>
+          <button
+            class="nav-hamburger"
+            id="navHamburger"
+            aria-label="Toggle navigation"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-hero-breadcrumb" data-aos="fade-right">
+          <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i>
+          <span>Experience</span>
+        </div>
+        <div class="section-label animate-hero">
+          <i class="fas fa-briefcase"></i> Journey
+        </div>
+        <h1
+          class="section-title animate-hero-delay-1"
+          style="font-size: clamp(2.2rem, 5vw, 3.5rem)"
+        >
+          Professional <span class="gradient-text">Experience</span>
+        </h1>
+        <div class="section-divider animate-hero-delay-2"></div>
+        <p class="section-sub animate-hero-delay-2">
+          My professional journey — from freelancing to working with production
+          systems at scale.
+        </p>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="timeline">
+          <!-- The Aviyaan -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="fas fa-calendar"></i> Mar 2024 – Present
+              </div>
+              <div class="timeline-title">
+                Freelance Full Stack Developer & SaaS Builder
+              </div>
+              <div class="timeline-company">
+                <i class="fas fa-laptop-code" style="font-size: 0.8rem"></i>
+                Independent / Contract (The Aviyaan & Others)
+              </div>
+              <p class="timeline-desc">
+                Building production web applications, custom ecommerce stores,
+                SaaS dashboards, and workflow automation. Responsibilities cover
+                the full development lifecycle, deployment configuration, and
+                technical SEO visibility.
+              </p>
+              <div
+                class="glass-card"
+                style="
+                  padding: 18px;
+                  margin-bottom: 16px;
+                  background: var(--bg-card2);
+                "
+              >
+                <h6
+                  style="
+                    font-weight: 700;
+                    font-size: 0.88rem;
+                    margin-bottom: 12px;
+                    color: var(--accent);
+                  "
+                >
+                  <i class="fas fa-tasks" style="margin-right: 6px"></i> Key
+                  Responsibilities
+                </h6>
+                <div class="grid-2" style="gap: 8px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Custom Web Apps & SaaS
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Ecommerce & Gateways
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Production Deployment
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    VPS Server Management
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Google Search Console
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Search Indexing & GMB
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Technical & Local SEO
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Performance Optimization
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag">PHP</span
+                ><span class="timeline-tag">Django</span
+                ><span class="timeline-tag">MySQL</span
+                ><span class="timeline-tag">VPS</span
+                ><span class="timeline-tag">Search Console</span
+                ><span class="timeline-tag">Local SEO</span
+                ><span class="timeline-tag">Automation</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Freelance -->
+          <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="fas fa-calendar"></i> Feb 2023 – Mar 2024
+              </div>
+              <div class="timeline-title">Freelance Web Developer</div>
+              <div class="timeline-company">
+                <i class="fas fa-laptop" style="font-size: 0.8rem"></i>
+                Self-Employed
+              </div>
+              <p class="timeline-desc">
+                Built custom websites and business solutions for clients from
+                scratch. Worked across the full spectrum of web development —
+                from client consultation to final deployment.
+              </p>
+              <div
+                class="glass-card"
+                style="
+                  padding: 18px;
+                  margin-bottom: 16px;
+                  background: var(--bg-card2);
+                "
+              >
+                <h6
+                  style="
+                    font-weight: 700;
+                    font-size: 0.88rem;
+                    margin-bottom: 12px;
+                    color: var(--accent);
+                  "
+                >
+                  <i class="fas fa-tasks" style="margin-right: 6px"></i> Work
+                  Delivered
+                </h6>
+                <div class="grid-2" style="gap: 8px">
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Frontend Development
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Backend Development
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    MySQL Integration
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Deployment
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Hosting Setup
+                  </div>
+                  <div
+                    style="
+                      display: flex;
+                      align-items: center;
+                      gap: 8px;
+                      font-size: 0.82rem;
+                      color: var(--text-muted);
+                    "
+                  >
+                    <i
+                      class="fas fa-check"
+                      style="color: #22c55e; font-size: 0.7rem"
+                    ></i>
+                    Client Consultation
+                  </div>
+                </div>
+              </div>
+              <div class="timeline-tags">
+                <span class="timeline-tag">HTML/CSS</span
+                ><span class="timeline-tag">JavaScript</span
+                ><span class="timeline-tag">PHP</span
+                ><span class="timeline-tag">MySQL</span
+                ><span class="timeline-tag">Hosting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <div data-aos="fade-right">
+          <div class="section-label">
+            <i class="fas fa-trophy"></i> Milestones
+          </div>
+          <h2 class="section-title">
+            Key <span class="gradient-text">Achievements</span>
+          </h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="achievements-grid mt-4">
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="100">
+            <div class="achievement-icon"><i class="fas fa-globe"></i></div>
+            <span class="achievement-text"
+              >Delivered 20+ Production Ready Websites</span
+            >
+          </div>
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="150">
+            <div class="achievement-icon"><i class="fas fa-server"></i></div>
+            <span class="achievement-text"
+              >Managed complete deployment pipelines</span
+            >
+          </div>
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="200">
+            <div class="achievement-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="achievement-text"
+              >Improved website performance & SEO scores</span
+            >
+          </div>
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="250">
+            <div class="achievement-icon"><i class="fas fa-industry"></i></div>
+            <span class="achievement-text">Worked across 5+ industries</span>
+          </div>
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="300">
+            <div class="achievement-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <span class="achievement-text"
+              >Built production-ready SaaS solutions</span
+            >
+          </div>
+          <div class="achievement-item" data-aos="fade-up" data-aos-delay="350">
+            <div class="achievement-icon"><i class="fas fa-handshake"></i></div>
+            <span class="achievement-text"
+              >Maintained long-term client relationships</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="cta-section" data-aos="zoom-in">
+          <h2 class="cta-title">
+            Let's Add Your Project to
+            <span class="gradient-text">My Story</span>
+          </h2>
+          <p class="cta-desc">
+            Looking for a developer with real-world experience? Let's connect.
+          </p>
+          <a href="contact.html" class="btn-primary-glow"
+            ><i class="fas fa-paper-plane"></i> Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+   <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-grid">
+          <div>
+            <div class="footer-brand">Harsh.dev</div>
+            <p class="footer-desc">
+              Full Stack Web Developer crafting production-ready solutions from
+              idea to deployment. Specializing in PHP, Python, Django, and
+              scalable business applications.
+            </p>
+            <div class="footer-social">
+              <a href="mailto:harshpandeylucifer@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://www.github.com/lucifer01430"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/harshpandey0143/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="https://wa.me/919555299718"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="https://youtube.com/@sastadeveloper0143"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="footer-heading">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="skills.html">Skills</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">More</div>
+            <ul class="footer-links">
+              <li><a href="experience.html">Experience</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <div class="footer-heading">Contact</div>
+            <ul class="footer-links">
+              <li>
+                <a href="mailto:harshpandeylucifer@gmail.com"
+                  ><i
+                    class="fas fa-envelope"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Email Me</a
+                >
+              </li>
+              <li>
+                <a href="tel:+919555299718"
+                  ><i
+                    class="fas fa-phone"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  +91 95552 99718</a
+                >
+              </li>
+              <li>
+                <span style="color: var(--text-dim); font-size: 0.85rem"
+                  ><i
+                    class="fas fa-map-marker-alt"
+                    style="margin-right: 6px; font-size: 0.75rem"
+                  ></i>
+                  Lucknow, India</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-divider"></div>
+          <p class="footer-bottom-text">
+            © 2026 Harsh Pandey. Turning ideas into websites, software, and
+            scalable digital experiences.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <button id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="assets/js/terminal.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

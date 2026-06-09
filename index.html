@@ -125,7 +125,10 @@
           <span class="terminal-title">bash - system_check</span>
         </div>
         <div class="terminal-body" id="preloader-terminal-body">
-          <div class="terminal-line"><span class="prompt">&gt;</span> <span class="cmd-text">npm run dev:portfolio</span></div>
+          <div class="terminal-line">
+            <span class="prompt">&gt;</span>
+            <span class="cmd-text">npm run dev:portfolio</span>
+          </div>
         </div>
       </div>
     </div>
@@ -134,10 +137,26 @@
         const body = document.getElementById("preloader-terminal-body");
         const isFirstLoad = !sessionStorage.getItem("portfolio-loaded");
         const steps = [
-          { text: "Loading modules...", type: "info", delay: isFirstLoad ? 200 : 80 },
-          { text: "Resolving developer.profile...", type: "info", delay: isFirstLoad ? 350 : 120 },
-          { text: "Est. secure connection [OK]", type: "success", delay: isFirstLoad ? 500 : 180 },
-          { text: "Portfolio ready.", type: "success", delay: isFirstLoad ? 650 : 220 }
+          {
+            text: "Loading modules...",
+            type: "info",
+            delay: isFirstLoad ? 200 : 80,
+          },
+          {
+            text: "Resolving developer.profile...",
+            type: "info",
+            delay: isFirstLoad ? 350 : 120,
+          },
+          {
+            text: "Est. secure connection [OK]",
+            type: "success",
+            delay: isFirstLoad ? 500 : 180,
+          },
+          {
+            text: "Portfolio ready.",
+            type: "success",
+            delay: isFirstLoad ? 650 : 220,
+          },
         ];
 
         let currentStep = 0;
@@ -145,7 +164,8 @@
           if (currentStep >= steps.length) {
             const cursorLine = document.createElement("div");
             cursorLine.className = "terminal-line";
-            cursorLine.innerHTML = '<span class="prompt">&gt;</span><span class="blink-cursor"></span>';
+            cursorLine.innerHTML =
+              '<span class="prompt">&gt;</span><span class="blink-cursor"></span>';
             body.appendChild(cursorLine);
             sessionStorage.setItem("portfolio-loaded", "true");
             return;
@@ -156,9 +176,11 @@
             const line = document.createElement("div");
             line.className = "terminal-line";
             if (step.type === "success") {
-              line.innerHTML = '<span class="success-text">✔ ' + step.text + '</span>';
+              line.innerHTML =
+                '<span class="success-text">✔ ' + step.text + "</span>";
             } else if (step.type === "info") {
-              line.innerHTML = '<span class="info-text">i ' + step.text + '</span>';
+              line.innerHTML =
+                '<span class="info-text">i ' + step.text + "</span>";
             } else {
               line.innerHTML = "<span>" + step.text + "</span>";
             }
@@ -534,7 +556,7 @@
             class="project-card"
             data-aos="fade-up"
             data-aos-delay="100"
-            data-category="saas"
+            data-category="hospitality"
             data-project
           >
             <div class="project-card-header">
@@ -543,42 +565,68 @@
                 style="
                   background: linear-gradient(
                     135deg,
-                    rgba(56, 189, 248, 0.2),
-                    rgba(129, 140, 248, 0.2)
+                    rgba(249, 115, 22, 0.2),
+                    rgba(245, 158, 11, 0.2)
                   );
                 "
               ></div>
-              <div class="project-card-icon">🏥</div>
+
+              <img
+                src="https://venues.theaviyaan.com/media/gallery/images/Splash.jpg"
+                alt="The Aviyaan Luxe Serenity"
+                style="
+                  width: 100%;
+                  height: 220px;
+                  object-fit: cover;
+                  border-radius: 12px;
+                  display: block;
+                "
+              />
+
               <span
                 class="project-card-category"
                 style="
-                  background: rgba(56, 189, 248, 0.2);
-                  color: #38bdf8;
-                  border: 1px solid rgba(56, 189, 248, 0.3);
+                  background: rgba(249, 115, 22, 0.2);
+                  color: #f59e0b;
+                  border: 1px solid rgba(249, 115, 22, 0.3);
                 "
-                >SaaS</span
               >
+                Hospitality
+              </span>
             </div>
+
             <div class="project-card-body">
-              <div class="project-card-title">Healthcare Management Portal</div>
+              <div class="project-card-title">The Aviyaan Luxe Serenity</div>
+
               <p class="project-card-desc">
-                Complete patient management system with appointment scheduling,
-                medical records, and billing — built for a healthcare startup.
+                Full-stack hospitality management platform with multi-role
+                dashboards, room booking, ticket booking, blog management, and
+                custom operational modules for a luxury wellness resort in
+                Lucknow.
               </p>
+
               <div class="project-card-tags">
+                <span class="project-tag">Python</span>
                 <span class="project-tag">Django</span>
-                <span class="project-tag">MySQL</span>
-                <span class="project-tag">REST API</span>
                 <span class="project-tag">Bootstrap</span>
+                <span class="project-tag">JavaScript</span>
               </div>
             </div>
+
             <div class="project-card-footer">
-              <span class="text-muted"
-                ><i class="fas fa-calendar-alt"></i> 2024</span
+              <span class="text-muted">
+                <i class="fas fa-globe"></i> Live Production
+              </span>
+
+              <a
+                href="https://theaviyaan.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="view-btn"
               >
-              <span class="view-btn"
-                ><span>View Details</span> <i class="fas fa-arrow-right"></i
-              ></span>
+                <span>Visit Website</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
           <!-- Project 2 -->

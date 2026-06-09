@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harshpandey.dev/sitemap.xml
+Sitemap: https://lucifer01430.github.io/Portfolio/sitemap.xml
